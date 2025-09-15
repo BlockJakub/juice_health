@@ -48,15 +48,20 @@
 }
 
 html {
-    background-image: url("img/antioxidant.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    background-color: transparent;
 }
 
 body {
 
     color: var(--text-main);
+}
+
+.body {
+    background-image: url("img/antioxidant.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
 }
 
 section,
