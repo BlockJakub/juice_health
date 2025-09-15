@@ -1,0 +1,397 @@
+/* Center icon and title in juice recipe cards */
+.juice-title-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+    width: 100%;
+    text-align: center;
+    margin: 0.5em 0 0.2em 0;
+}
+
+.juice-title-center .material-icons {
+    margin-right: 0;
+    display: block;
+    font-size: 2em;
+}
+
+@media (max-width: 600px) {
+    .juice-title-center .material-icons {
+        font-size: 1.3em;
+    }
+}
+
+/* ======= THEME PALETTE ======= */
+:root {
+    --primary: #388e3c;
+    --primary-dark: #256029;
+    --accent: #ffb300;
+    --bg-main: #f6f7f9;
+    --bg-section: #f1f8e9;
+    --bg-card: #ffffff;
+    --text-main: #263238;
+    --text-muted: #78909c;
+    --text-accent: #ffb300;
+    --border-radius: 16px;
+    --shadow: 0 4px 24px rgba(56, 142, 60, 0.07);
+}
+
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+}
+
+section,
+.section {
+    background: var(--bg-section);
+    border-radius: var(--border-radius);
+    margin-bottom: 2.5rem;
+    box-shadow: var(--shadow);
+    padding: 2.5rem 2rem;
+}
+
+/* ======= CARDS ======= */
+.card,
+.card-panel,
+.z-depth-2 {
+    width: 100%;
+    height: 122%;
+    background: var(--bg-card) !important;
+    border-radius: var(--border-radius) !important;
+    box-shadow: var(--shadow) !important;
+    color: var(--text-main);
+    margin-bottom: 2rem;
+}
+
+.card-title,
+.card .card-title {
+    color: #546e7a;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 0.01em;
+    margin-bottom: 0.5em;
+}
+
+.card-content p {
+    color: var(--text-muted);
+    font-size: 1.08rem;
+}
+
+.card-hoverable img {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.card:hover,
+.card-panel:hover {
+    box-shadow: 0 8px 32px rgba(56, 142, 60, 0.13) !important;
+    transform: translateY(-2px) scale(1.012);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+/* ======= BUTTONS & LINKS ======= */
+.btn,
+.btn-large,
+.btn-small {
+    background: var(--primary) !important;
+    color: #fff !important;
+    border-radius: 32px !important;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    box-shadow: 0 2px 8px rgba(56, 142, 60, 0.09);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+    background: var(--primary-dark) !important;
+    color: #fff !important;
+    box-shadow: 0 4px 16px rgba(56, 142, 60, 0.18);
+}
+
+a,
+.card a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover,
+.card a:hover {
+    color: var(--accent);
+}
+
+/* ======= TYPOGRAPHY ======= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "montserrat", "Roboto", Arial, sans-serif;
+    font-weight: 700;
+    color: var(--primary-dark);
+    letter-spacing: 0.01em;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1.2rem;
+}
+
+.flow-text,
+p,
+li {
+    color: var(--text-main);
+    font-family: "source-sans-pro", "Roboto", Arial, sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.muted,
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* ======= ICONS ======= */
+.material-icons,
+.material-icons.left,
+.material-icons.prefix {
+    color: #90a4ae !important;
+    opacity: 0.85;
+    vertical-align: middle;
+    transition: color 0.2s;
+}
+
+.card-title .material-icons.left {
+    font-size: 2.1em;
+    margin-right: 0.3em;
+}
+
+@media (max-width: 992px) {
+    .card-title .material-icons.left {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-title .material-icons.left {
+        font-size: 1.1em;
+    }
+}
+
+/* ======= SECTIONS & DIVIDERS ======= */
+.section-divider {
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+    border: none;
+    margin: 3rem 0 2rem 0;
+    border-radius: 2px;
+}
+
+/* ======= NAVBAR & FOOTER ======= */
+.nav-wrapper,
+.page-footer {
+    background: var(--primary-dark) !important;
+}
+
+.page-footer {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    margin-top: 3rem;
+    box-shadow: var(--shadow);
+}
+
+.page-footer h5,
+.page-footer a,
+.page-footer p {
+    color: #fff !important;
+}
+
+.page-footer a:hover {
+    color: var(--accent) !important;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 992px) {
+
+    section,
+    .section {
+        padding: 1.5rem 0.7rem;
+    }
+
+    .card,
+    .card-panel,
+    .z-depth-2 {
+        padding: 1.2rem 0.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    section,
+    .section {
+        padding: 1rem 0.2rem;
+    }
+
+    .card,
+    .card-panel,
+    .z-depth-2 {
+        padding: 0.7rem 0.2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Muted color and responsive size for Material Icons in evidence cards */
+.evidence .card-title .material-icons.left {
+    color: #90a4ae !important;
+    opacity: 0.85;
+    font-size: 2.7em;
+    vertical-align: middle;
+    margin-right: 0.3em;
+    transition: font-size 0.2s;
+}
+
+@media (max-width: 992px) {
+    .evidence .card-title .material-icons.left {
+        font-size: 2.1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .evidence .card-title .material-icons.left {
+        font-size: 1.5em;
+    }
+}
+
+.evidence .card-title {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+/* Muted color for Material Icons in contact form and map */
+.contact-form-card .material-icons.prefix,
+.contact-form-card .material-icons.left,
+.contact-form-card .material-icons,
+.contact-row .card .material-icons,
+.contact-hero .material-icons {
+    color: #90a4ae !important;
+    /* blue-grey lighten-1 */
+    opacity: 0.85;
+    font-size: 3.7em;
+}
+
+
+
+/* Contact form location input fix */
+#contact-form #location {
+    letter-spacing: 0.05em;
+    font-size: 1.1em;
+    background: #f3f7f9;
+    border-radius: 6px;
+    padding-left: 0.5em;
+    min-width: 120px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Body text */
+body {
+    font-family: "source-sans-pro", "Roboto", Arial, sans-serif;
+    /* replace "source-sans-pro" with your Adobe text font name */
+    color: #263238;
+    background-image: url("img/Firefly_Stay_active_with_small_daily_movement_161225.jpg");
+
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "montserrat", "Roboto", sans-serif;
+    /* replace "montserrat" with your Adobe display font */
+    font-weight: 500;
+    /* or 600 for stronger headings */
+    margin-top: 0;
+}
+
+section {
+    margin: 2rem;
+    padding: 2rem;
+}
+
+/* Cards / Juice tiles titles */
+.juice-tile-btn.card-title {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transform: translate(-40%, -40%);
+    color: #546e7a;
+    /* muted color for better readability */
+}
+
+/* Article cards kicker / meta info */
+.kicker,
+.article-meta {
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: 400;
+}
+
+
+main.container.section {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.blog-article section {
+    margin-bottom: 2.5rem;
+}
+
+.juice-links-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.juice-tile-btn.card {
+    max-width: 240px;
+    flex: 1 1 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.juice-tile-btn .card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer fixes */
+.page-footer {
+    padding: 3rem 2rem;
+}
