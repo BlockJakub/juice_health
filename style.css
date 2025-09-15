@@ -47,8 +47,15 @@
     --shadow: 0 4px 24px rgba(56, 142, 60, 0.07);
 }
 
+html {
+    background-image: url("img/antioxidant.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 body {
-    background: var(--bg-main);
+
     color: var(--text-main);
 }
 
