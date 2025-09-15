@@ -27,12 +27,12 @@
     <header>
         <nav class="green darken-1">
             <div class="nav-wrapper container">
-                <a href="../index.html" class="brand-logo">HealthyJuices</a>
+                <a href="index.html" class="brand-logo">HealthyJuices</a>
                 <a href="#" data-target="mobile-menu" class="sidenav-trigger">
                     <i class="material-icons">menu</i>
                 </a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li>
                         <a class="dropdown-trigger" href="#" data-target="topics-dropdown">Topics<i
                                 class="material-icons right">arrow_drop_down</i></a>
@@ -83,8 +83,8 @@
                 <p class="article-meta">By Jakub • Sep 15, 2025 • 6 min read</p>
             </header>
 
-            <figure>
-                <img src=".././img/Firefly_glass of juice Hydrating watermelon and fresh mint for summer days(Minty Melon) 105513.jpg"
+            <figure class="responsive-img">
+                <img src="img/Firefly_glass of juice Hydrating watermelon and fresh mint for summer days(Minty Melon) 105513.jpg"
                     width="968" height=" 533" alt="fresh juices"
                     style="width:100%;border-radius:8px;margin-bottom:1rem">
                 <figcaption class="muted">Freshly squeezed juices are a concentrated source of vitamins and
@@ -166,12 +166,33 @@
         </article>
     </main>
 
+    <!-- Footer -->
     <footer class="page-footer">
-        <div class="container">© 2025 HealthyJuices</div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h5 class="white-text">HealthyJuices</h5>
+                    <p class="grey-text text-lighten-4">Practical guides and friendly nutrition information.</p>
+                </div>
+                <div class="col s12 m4 offset-m2">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="privacy.html">Privacy</a></li>
+                        <li><a class="grey-text text-lighten-3" href="terms.html">Terms</a></li>
+                        <li><a class="grey-text text-lighten-3" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">© 2025 HealthyJuices. All rights reserved. <a href="pages/service/terms.html"
+                    class="grey-text text-lighten-4 right">Legal</a></div>
+        </div>
     </footer>
-
+    <!-- JS Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src=".././assets/app.js"></script>
+    <script src="assets/app.js"></script>
+    <script src="js/sidenav.js"></script>
 </body>
 
 </html>
